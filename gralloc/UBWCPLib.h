@@ -1,5 +1,4 @@
-#ifndef UBWCPLIB_H
-#define UBWCPLIB_H
+#pragma once
 
 typedef enum {
     UBWCPLib_RGBA8888 = 0,
@@ -26,5 +25,3 @@ int LINK_UBWCPLib_validate_stride(void *context, unsigned int width, UBWCPLib_Im
 int LINK_UBWCPLib_set_buf_attrs(void *context, unsigned int width, UBWCPLib_buf_attrs *attrs);
 void* LINK_UBWCPLib_create_session();
 void LINK_UBWCPLib_destroy_session(void *session);
-
-#endif // UBWCPLIB_H
